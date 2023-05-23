@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+
+    <fieldset>
+        <div class="main">
+            <div class="box">
+                <label id="day">DAY</label><br>
+                <input type="number" id="input1-el" placeholder="DD"  onkeyup="error1()">
+                <div class="div"></div>
+            </div>
+    
+            <div class="box">
+                <label id="month">MONTH</label><br>
+                <input type="number" id="input2-el" placeholder="MM" onkeyup="error2()">
+                <div class="div2"></div>
+
+            </div>
+    
+            <div class="box">
+                <label id="year">YEAR</label><br>
+                <input type="number" id="input3-el" placeholder="YYY" onkeyup="validYear()">
+                <div class="div3"></div>
+
+            </div>
+
+            
+        </div>
+
+      <div class="middle">
+        <span class="line"></span>
+        <button id="icon" onclick="sub()"> <svg  xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+        </button>
+      </div>
+        <div class="main-2">
+            <div class="box-2">
+                <span id="num-el1"> - -</span>
+                <h1>years</h1>
+            </div>
+
+            <div class="box-2">
+                <span id="num-el2"> - - </span>
+                <h1>months</h1>
+            </div>
+
+            <div class="box-2">
+                <span id="num-el3"> - -</span>
+                <h1>days</h1>
+            </div>
+        </div>
+        
+    </fieldset>
+    <script src="/main.js"></script>
+</body>
+</html>
